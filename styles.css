@@ -1,6 +1,8 @@
 * {
     width: 100%;
-    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
 }
 
 .container {
@@ -11,6 +13,7 @@
 
 .header {
     max-height: 250px;
+    margin-top: 25px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -37,18 +40,16 @@
     /* padding-right: 50px; */
     display: flex;
     justify-content: space-between; /* выделяет равное пространство между элементами */
-    
+    padding-bottom: 10px;
 }
 
 .menu ul{
     display: flex;
     list-style: none; /* убирает маркеры списка */
-    padding: 0;
 
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 19px; */
     color: #616364;
     
 }
@@ -63,6 +64,7 @@
 
 .menu-item a{
     text-decoration: none; /* убирает подчёркивание у ссылок */
+    color: #616364;
 }
 
 .menu-item a:hover{ /* реакция на наведение курсора */
@@ -70,6 +72,8 @@
     font-weight: 500;
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    padding-bottom: 8px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -93,6 +97,158 @@
 
 /* ---------------------------------------------------------------------------------- */
 /* основной блок */
+.content {
+    display: flex;
+    align-items: center;
+}
+
 .content-view{
     width: 45%;
+    padding-top: 10px;
 }
+
+.text-content{
+    padding-left: 103px;
+}
+
+.content-view .garanty {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.16em;
+    color: #A58054;
+}
+
+.content-view h1 {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    color: #000000;
+
+    padding-top: 0;
+    padding-bottom: 26px;
+    max-width: 535px;
+}
+
+.description{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #646464;
+    backdrop-filter: blur(2px);
+
+    max-width: 503px;
+}
+
+.content-view .start {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B69874;
+
+    margin-top: 50px;
+}
+
+.content-view .price{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #1B3544;
+
+    margin-top: 2px;
+}
+
+.content-button {
+    margin-top: 42px;
+    width: 185px;
+    height: 61px;
+    background: #1B3544;
+    border: none;
+    box-sizing: border-box;
+
+    padding: 18px 45px; /* top/bottom left/right */
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.content-button:hover{
+    background: #325f79;
+    transition: background-color .2s;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* выбор мебели (контент справа) */
+.product-content {
+    margin-right: 60px;
+}
+
+#main-product{
+    height: 601px;
+    width: 587px;
+    /* height: 100%;
+    width: 100%; */
+    background-image: url(image/body_chair.svg), url(image/Ellipse1.svg),
+    url(image/Ellipse2.svg);
+    background-size: 496px 553px, 423px, 562px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products{
+    max-width: 112px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* margin: 30px auto; */
+}
+
+.product-content{
+    display: flex;
+}
+
+.product-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-item + .product-item{
+    margin-top: 46px;
+}
+
+.product-item img{
+    max-width: 89px;
+    max-height: 74px;
+    margin-bottom: 5px;
+}
+
+.text-product {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    color: #1B3544;
+    text-decoration: none; /* убирает подчёркивание у ссылок */
+    text-align: center;
+}
+
+.text-product:hover{
+    color: #000000;
+    /* border-bottom: 2px solid #B69874; */
+    text-decoration: underline solid #B69874;
+    text-decoration-thickness: 2px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
