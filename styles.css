@@ -5,14 +5,10 @@
     /* background: #ffffff; */
 }
 
-html{
-    
+html, body {
     height: 100%;
 }
 
-/* body {
-    display: table;
-} */
 
 body .index {
     background: #ffffff;
@@ -27,6 +23,7 @@ body .index {
 .header {
     max-height: 250px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -64,7 +61,6 @@ body .index {
     font-weight: 400;
     font-size: 16px;
     color: #616364;
-    
 }
 
 .menu-item{
@@ -206,13 +202,10 @@ body .index {
 }
 
 #main-product{
-    height: 601px;
-    width: 587px;
-    /* height: 100%;
-    width: 100%; */
+    min-height: auto;
+    width: 564px;
     background-image: url(image/body_chair.svg), url(image/Ellipse1.svg),
     url(image/Ellipse2.svg);
-    /* background-size: 496px 553px, 423px, 562px; */
     background-size: 400px auto, 310px, 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -268,19 +261,24 @@ body .index {
 
 /* ---------------------------------------------------------------------------------- */
 /* футер */
+footer {
+    position: absolute;
+    bottom: 0px;
+}
 
 .footer{
     background-color: #1B3544;
-    /* max-height: 300px; */
-    height: 100%;
-    /* width: 100%; */
+    max-height: 300px;
     display: flex;
     justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 33px;
 }
 
 .content-footer{
     max-width: 30%;
     display: flex;
+    align-items: center;
     /* justify-content: center;
     align-items: center; */
     /* flex-direction: row; */
@@ -305,7 +303,7 @@ body .index {
     font-size: 32px;
     color: #FFFFFF;
     
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 17px;
 }
 
@@ -324,7 +322,7 @@ body .index {
 .footer-statistic {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 /* --------------------------------------------------------------------- */
@@ -334,12 +332,12 @@ body .index {
     color: #FFFFFF;
     font-family: 'PT Serif';
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .views #view-1 {
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .view {
