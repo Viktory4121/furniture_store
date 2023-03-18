@@ -2,6 +2,10 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    /* background: #ffffff; */
+}
+
+body .index {
     background: #ffffff;
 }
 
@@ -207,10 +211,8 @@
     margin-left: 60px;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* margin: 30px auto; */
 }
 
 .product-content{
@@ -252,3 +254,98 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* футер */
+
+.footer{
+    background-color: #1B3544 !important;
+    max-height: 300px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.content-footer{
+    max-width: 30%;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: row; */
+}
+
+/* .footer-chair{
+    max-width: 359px;
+} */
+
+.footer-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-info h2 {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.footer-info p{
+    max-width: 360px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    color: #E5E5E5;
+    backdrop-filter: blur(2px);
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.13);
+}
+
+.footer-statistic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.view {
+    max-width: 210px;
+}
+
+.views .number-view{
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.views .text-view {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+/* .view + .view {
+    margin-right: 33px;
+} */
+
+/* тут будут иконки членов сообщества */
+.members {
+    display: flex;
+}
+
+
+
+.text-members{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-members .trust {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;    
+}
+
+.text-members .peoples {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+}
