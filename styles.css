@@ -111,6 +111,7 @@ body .index {
 .content {
     display: flex;
     align-items: center;
+    padding-top: 30px;
 }
 
 .content-view{
