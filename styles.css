@@ -5,6 +5,15 @@
     /* background: #ffffff; */
 }
 
+html{
+    
+    height: 100%;
+}
+
+/* body {
+    display: table;
+} */
+
 body .index {
     background: #ffffff;
 }
@@ -83,11 +92,13 @@ body .index {
 /* ---------------------------------------------------------------------------------- */
 /* бургер в хедере */
 .burger{
-    max-width: 5%;
+    /* max-width: 5%; */
+    max-width: 112px;
+    height: 20px;
     display: flex;
     align-items: center;
     flex-direction: column; /* размещает элементы вертикально */
-    padding-right: 50px;
+    padding-right: 60px;
 }
 
 .burger img {
@@ -201,7 +212,8 @@ body .index {
     width: 100%; */
     background-image: url(image/body_chair.svg), url(image/Ellipse1.svg),
     url(image/Ellipse2.svg);
-    background-size: 496px 553px, 423px, 562px;
+    /* background-size: 496px 553px, 423px, 562px; */
+    background-size: 400px auto, 310px, 400px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -258,22 +270,29 @@ body .index {
 /* футер */
 
 .footer{
-    background-color: #1B3544 !important;
-    max-height: 300px;
+    background-color: #1B3544;
+    /* max-height: 300px; */
+    height: 100%;
+    /* width: 100%; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .content-footer{
     max-width: 30%;
     display: flex;
-    /* justify-content: center; */
+    /* justify-content: center;
+    align-items: center; */
     /* flex-direction: row; */
 }
 
 /* .footer-chair{
     max-width: 359px;
 } */
+
+
+/* --------------------------------------------------------------------- */
+/* второй блок футера */
 
 .footer-info{
     display: flex;
@@ -285,6 +304,9 @@ body .index {
     font-weight: 400;
     font-size: 32px;
     color: #FFFFFF;
+    
+    margin-top: 20px;
+    margin-bottom: 17px;
 }
 
 .footer-info p{
@@ -294,6 +316,7 @@ body .index {
     font-size: 12px;
     color: #E5E5E5;
     backdrop-filter: blur(2px);
+    padding-bottom: 15px;
 
     border-bottom: 2px solid rgba(255, 255, 255, 0.13);
 }
@@ -301,51 +324,105 @@ body .index {
 .footer-statistic {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* --------------------------------------------------------------------- */
+.views{
+    display: flex;
+
+    color: #FFFFFF;
+    font-family: 'PT Serif';
+    font-weight: 400;
+}
+
+.views #view-1 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .view {
-    max-width: 210px;
+    width: auto;
 }
 
 .views .number-view{
-    font-family: 'PT Serif';
-    font-weight: 400;
     font-size: 30px;
-    color: #FFFFFF;
 }
 
 .views .text-view {
-    font-family: 'PT Serif';
-    font-weight: 400;
     font-size: 12px;
-    color: #FFFFFF;
 }
 
-/* .view + .view {
-    margin-right: 33px;
-} */
+.view + .view {
+    margin-left: 33px;
+}
 
+/* --------------------------------------------------------------------- */
 /* тут будут иконки членов сообщества */
 .members {
     display: flex;
 }
 
-
-
 .text-members{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+
+    border-left: 2px solid rgba(255, 255, 255, 0.46);
+    padding-left: 30px;
 }
 .text-members .trust {
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;    
 }
 
 .text-members .peoples {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 10px;
+}
+
+.members-icons {
+    max-width: 116px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.members-icons img {
+    max-width: 36px;
+    position: absolute;
+}
+
+.members-icons span {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    z-index: 5;
+    top: 9px;       /* костыльное центрирование по-вертикали */
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
     color: #FFFFFF;
+}
+
+#red-round{
+    z-index: 4;
+    left: 0;
+}
+
+#people1 {
+    z-index: 3;
+    left: 26px;
+}
+
+#people2 {
+    z-index: 2;
+    left: 52px;
+}
+
+#people3 {
+    z-index: 1;
+    left: 78px;
 }

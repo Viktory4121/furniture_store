@@ -16,13 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=PT+Serif:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Public+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body class="index">
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
         <div class="logo-header">
             <img src="image/house.svg" alt="House"  class="img-logo-house">
             <img src="image/Mask_Group.svg" alt="Xeon" class="img-logo-xeon">
         </div> 
-        <nav class="menu">
+        <nav class="menu" role="navigation">
             <ul>
                 <li class="menu-item">
                     <a href="#">About</a>
@@ -49,7 +49,7 @@
     </div>
     </header>
 
-    <div class="content">
+    <div class="content" role="main">
         <div class="content-view text-content">
             <div class="garanty">100% Quality Guranty</div>
 
@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <!-- будет два фона: кресло и цвет тёмный -->
         <div class="footer-chair content-footer">
             <!-- <img src="image/footer_chair.svg" alt=""> -->
@@ -98,22 +98,26 @@
         </div>
         <div class="footer-statistic content-footer">
             <div class="views">
-                <div class="view">
+                <div id="view-1" class="view">
                     <span class="number-view">20K+</span>
                     <span class="text-view">People Visiting this year</span>
                 </div>
-                <div class="view">
+                <div id="view-2" class="view">
                     <span class="number-view">15</span>
                     <span class="text-view">Years Experience</span>
                 </div>
             </div>
             <div class="members">
                 <div class="members-icons">
-
+                    <img id="red-round" src="image/round_people.svg" alt="">
+                    <span>50+</span>
+                    <img id="people1" src="image/people1.svg" alt="">
+                    <img id="people2" src="image/people2.svg" alt="">
+                    <img id="people3" src="image/people3.svg" alt="">
                 </div>
                 <div class="text-members">
                     <span class="trust">Trust Members</span>
-                    <span class="peoples">More than 50k peoples integrate with us.</span>
+                    <span class="peoples">More than 50k peoples integrate with us</span>
                 </div>
             </div>
         </div>
