@@ -29,7 +29,7 @@ body .index {
 /* ---------------------------------------------------------------------------------- */
 /* логотип в хедере */
 .logo-header{
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
     max-width: 20%;
@@ -56,6 +56,7 @@ body .index {
 .menu ul{
     display: flex;
     list-style: none; /* убирает маркеры списка */
+    justify-content: center;
 
     font-family: 'Inter';
     font-weight: 400;
@@ -112,6 +113,7 @@ body .index {
     display: flex;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 .content-view{
@@ -203,11 +205,12 @@ body .index {
 }
 
 #main-product{
+    position: relative;
     min-height: auto;
     width: 564px;
     background-image: url(image/body_chair.svg), url(image/Ellipse1.svg),
     url(image/Ellipse2.svg);
-    background-size: 400px auto, 310px, 400px;
+    background-size: 450px auto, 330px, 420px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -263,12 +266,17 @@ body .index {
 /* ---------------------------------------------------------------------------------- */
 /* футер */
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0px;
 }
 
 .footer{
     background-color: #1B3544;
+    /* background: url(image/footer_chair.svg), #1B3544;
+    background-size: 360px auto, auto;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+
     max-height: 300px;
     display: flex;
     justify-content: space-between;
@@ -286,8 +294,15 @@ footer {
 }
 
 /* .footer-chair{
-    max-width: 359px;
+    margin-top: 55px;
 } */
+
+.footer-chair img{
+    position: absolute;
+    max-width: 340px;
+    bottom: 0;
+    left: 75px;
+}
 
 
 /* --------------------------------------------------------------------- */
