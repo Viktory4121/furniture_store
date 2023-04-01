@@ -263,6 +263,67 @@ body .index {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.out-color-menu{
+    position: absolute;
+    
+    /* костыльное выравнивание */
+    left: 500px;
+    bottom: 300px;
+}
+
+.content-color-menu{
+    display: flex;
+    align-items: center;
+    
+    width: 366px;
+    height: 79px;
+    /* left: 534px;
+    top: 576px; */
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px rgba(229, 229, 229, 0.53);
+    border-radius: 50px;
+}
+
+.content-color-menu span{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1B3544;
+    width: auto;
+
+    margin: 0 30px;
+}
+
+.color-round{
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 30px;
+}
+
+.color-round:hover{
+    border: 2px solid #CFBEAA;
+}
+
+.color-round + .color-round{
+    margin-left: 18px;
+}
+
+#color1{
+    background: #26394A;
+}
+#color2{
+    background: #F5DCDC;
+}
+#color3{
+    background: #A58054;
+}
+#color4{
+    background: #F6C461;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* футер */
 footer {
