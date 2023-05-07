@@ -265,9 +265,10 @@ body .index {
 
 .out-color-menu{
     position: absolute;
+    width: auto;
     
     /* костыльное выравнивание */
-    left: 500px;
+    left: 650px;
     bottom: 300px;
 }
 
@@ -277,8 +278,6 @@ body .index {
     
     width: 366px;
     height: 79px;
-    /* left: 534px;
-    top: 576px; */
 
     background: #FFFFFF;
     box-shadow: 0px 4px 22px rgba(229, 229, 229, 0.53);
