@@ -1,7 +1,8 @@
 * {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* background: #ffffff; */
 }
 
@@ -15,24 +16,25 @@ body .index {
 }
 
 .container {
+    width: 100%;
     display: flex;
     align-items: center;        /* центрируется относительно вертикали */
-    /* justify-content: center; */    /* центрируется по горизонтали */
+    justify-content: space-between;    /* центрируется по горизонтали */
 }
 
 .header {
-    max-height: 250px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    max-height: 11.70vw;
+    margin: 25px auto;
 }
 
 /* ---------------------------------------------------------------------------------- */
 /* логотип в хедере */
 .logo-header{
-    margin-left: 30px;
+    margin-left: 5vw;
     display: flex;
     align-items: center;
-    max-width: 20%;
+    justify-content: center;
+    /* max-width: 20%; */
 }
 .img-logo-house{
     max-width: 32px;
@@ -48,9 +50,9 @@ body .index {
 /* роуты */
 .menu {
     /* padding-right: 50px; */
-    display: flex;
-    justify-content: space-between; /* выделяет равное пространство между элементами */
-    padding-bottom: 10px;
+    /* display: flex;
+    justify-content: center; */ /* выделяет равное пространство между элементами */
+    /* padding-bottom: 10px; */
 }
 
 .menu ul{
@@ -65,11 +67,11 @@ body .index {
 }
 
 .menu-item{
-    max-width: 15%;
+    /* max-width: 15%; */
 }
 
 .menu-item + .menu-item{
-    margin-left: 32px;
+    margin-left: 2vw;
 }
 
 .menu-item a{
@@ -90,12 +92,12 @@ body .index {
 /* бургер в хедере */
 .burger{
     /* max-width: 5%; */
-    max-width: 112px;
+    /* max-width: 112px; */
     height: 20px;
     display: flex;
     align-items: center;
     flex-direction: column; /* размещает элементы вертикально */
-    padding-right: 60px;
+    margin-right: 5vw;
 }
 
 .burger img {
@@ -113,7 +115,7 @@ body .index {
     display: flex;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 .content-view{
@@ -268,8 +270,9 @@ body .index {
     width: auto;
     
     /* костыльное выравнивание */
-    left: 650px;
-    bottom: 300px;
+    left: 35%;
+    bottom: 35%;
+    /* transform: translate(150%, 150%); */
 }
 
 .content-color-menu{
@@ -304,6 +307,8 @@ body .index {
 
 .color-round:hover{
     border: 2px solid #CFBEAA;
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 .color-round + .color-round{
@@ -332,36 +337,20 @@ footer {
 
 .footer{
     background-color: #1B3544;
-    /* background: url(image/footer_chair.svg), #1B3544;
-    background-size: 360px auto, auto;
-    background-repeat: no-repeat; */
-    /* background-position: center; */
-
-    max-height: 300px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    justify-content: space-around;
+
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .content-footer{
-    max-width: 30%;
     display: flex;
-    align-items: center;
-    /* justify-content: center;
-    align-items: center; */
-    /* flex-direction: row; */
 }
 
-/* .footer-chair{
-    margin-top: 55px;
-} */
-
 .footer-chair img{
-    position: absolute;
-    max-width: 340px;
-    bottom: 0;
-    left: 75px;
+    max-width: 350px;
+    transform: translate(5%, -60%);
 }
 
 
@@ -370,7 +359,7 @@ footer {
 
 .footer-info{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footer-info h2 {
@@ -385,20 +374,20 @@ footer {
 
 .footer-info p{
     max-width: 360px;
+
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 12px;
     color: #E5E5E5;
+
     backdrop-filter: blur(2px);
     padding-bottom: 15px;
-
     border-bottom: 2px solid rgba(255, 255, 255, 0.13);
 }
 
 .footer-statistic {
     display: flex;
-    flex-wrap: wrap;
-    /* margin-top: 40px; */
+    flex-direction: column;
 }
 
 /* --------------------------------------------------------------------- */
@@ -414,10 +403,6 @@ footer {
 .views #view-1 {
     justify-content: center;
     align-items: center;
-}
-
-.view {
-    width: auto;
 }
 
 .views .number-view{
@@ -436,11 +421,12 @@ footer {
 /* тут будут иконки членов сообщества */
 .members {
     display: flex;
+    justify-content: space-between;
 }
 
 .text-members{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     font-family: 'Poppins';
     color: #FFFFFF;
 
@@ -460,12 +446,12 @@ footer {
 .members-icons {
     max-width: 116px;
     margin-right: 30px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .members-icons img {
     max-width: 36px;
-    position: absolute;
 }
 
 .members-icons span {
@@ -473,7 +459,8 @@ footer {
     width: 36px;
     height: 36px;
     z-index: 5;
-    top: 9px;       /* костыльное центрирование по-вертикали */
+    transform: translate(0, 25%);   /* костыльное центрирование по-вертикали */
+
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 15px;
@@ -483,20 +470,20 @@ footer {
 
 #red-round{
     z-index: 4;
-    left: 0;
+    transform: translate(0, 0);
 }
 
 #people1 {
     z-index: 3;
-    left: 26px;
+    transform: translate(-30%, 0);
 }
 
 #people2 {
     z-index: 2;
-    left: 52px;
+    transform: translate(-60%, 0);
 }
 
 #people3 {
     z-index: 1;
-    left: 78px;
+    transform: translate(-90%, 0);
 }
