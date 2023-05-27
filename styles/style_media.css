@@ -1,4 +1,12 @@
-@media (max-width: 1200px) {
+@media (max-width: 1364px) {
+    .out-color-menu{
+        /* костыльное выравнивание */
+        left: 5%;
+        bottom: -15%;
+    }
+}
+
+@media (max-width: 1230px) {
     #main-product{
         background-image: url(../image/body_chair.svg);
     }
@@ -6,10 +14,23 @@
     .footer {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+
     }
 
     .content-footer + .content-footer{
         margin-bottom: 5vw;
+        margin-left: 5vw;
     }
 
+    .footer-chair img{
+        left: 5%;
+        bottom: 50%;
+    }
+
+    .out-color-menu{
+        /* костыльное выравнивание */
+        /* left: 5%;
+        bottom: 47%; */
+    }
 }

@@ -1,15 +1,8 @@
 * {
-    /* width: 100%; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #ffffff; */
 }
-
-html, body {
-    height: 100%;
-}
-
 
 body .index {
     background: #ffffff;
@@ -47,13 +40,7 @@ body .index {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* роуты */
-.menu {
-    /* padding-right: 50px; */
-    /* display: flex;
-    justify-content: center; */ /* выделяет равное пространство между элементами */
-    /* padding-bottom: 10px; */
-}
+/* менюшка */
 
 .menu ul{
     display: flex;
@@ -64,10 +51,6 @@ body .index {
     font-weight: 400;
     font-size: 16px;
     color: #616364;
-}
-
-.menu-item{
-    /* max-width: 15%; */
 }
 
 .menu-item + .menu-item{
@@ -91,8 +74,6 @@ body .index {
 /* ---------------------------------------------------------------------------------- */
 /* бургер в хедере */
 .burger{
-    /* max-width: 5%; */
-    /* max-width: 112px; */
     height: 20px;
     display: flex;
     align-items: center;
@@ -114,18 +95,21 @@ body .index {
 .content {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     padding-top: 50px;
     padding-bottom: 200px;
+    margin: 0 100px;
 }
 
-.content-view{
-    width: 45%;
-    /* padding-top: 10px; */
-}
+/* .content-view {
+    width: 30%;
+} */
 
-.text-content{
-    padding-left: 103px;
-}
+/* .text-content{
+    padding-left: 100px;
+} */
 
 .content-view .garanty {
     font-family: 'Public Sans';
@@ -181,8 +165,6 @@ body .index {
 
 .content-button {
     margin-top: 42px;
-    width: 185px;
-    height: 61px;
     background: #1B3544;
     border: none;
     box-sizing: border-box;
@@ -202,32 +184,35 @@ body .index {
 
 /* ---------------------------------------------------------------------------------- */
 /* выбор мебели (контент справа) */
-.product-content {
+
+/* .product-content {
     margin-right: 60px;
-}
+} */
 
 #main-product{
     position: relative;
-    min-height: auto;
-    width: 564px;
+    width: 500px;
+    height: 500px;
+
     background-image: url(../image/body_chair.svg), url(../image/Ellipse1.svg),
     url(../image/Ellipse2.svg);
-    background-size: 28vw auto, 20vw, 25vw;
+    background-size: /* 28vw */ 370px auto, 20vw, 25vw;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .products{
     max-width: 112px;
-    margin-left: 60px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.product-content{
+.product-row {
     display: flex;
+    flex-direction: row;
 }
 
 .product-item{
@@ -267,17 +252,16 @@ body .index {
 
 .out-color-menu{
     position: absolute;
-    width: auto;
     
     /* костыльное выравнивание */
-    left: 35%;
-    bottom: 35%;
-    /* transform: translate(150%, 150%); */
+    left: 40%;
+    bottom: 40%;
 }
 
 .content-color-menu{
     display: flex;
     align-items: center;
+    justify-content: center;
     
     width: 366px;
     height: 79px;
@@ -293,9 +277,16 @@ body .index {
     font-size: 14px;
     line-height: 21px;
     color: #1B3544;
-    width: auto;
+    
+    margin-right: 30px;
+}
 
-    margin: 0 30px;
+.color-round-block {
+    width: 45%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .color-round{
@@ -309,10 +300,6 @@ body .index {
     border: 2px solid #CFBEAA;
     cursor: pointer;
     transform: scale(1.3);
-}
-
-.color-round + .color-round{
-    margin-left: 18px;
 }
 
 #color1{
@@ -349,9 +336,18 @@ footer {
     display: flex;
 }
 
+.footer-chair{
+    width: 350px;
+    
+}
+
 .footer-chair img{
+    position: absolute;
     max-width: 350px;
-    transform: translate(5%, -60%);
+
+    left: 5%;
+    bottom: 10%;
+    
 }
 
 
