@@ -28,9 +28,13 @@
         bottom: 50%;
     }
 
+    
+}
+
+@media (max-width: 1230px) {
     .out-color-menu{
         /* костыльное выравнивание */
         /* left: 5%;
-        bottom: 47%; */
+        bottom: 50%; */
     }
 }
