@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+    #main-product{
+        background-image: url(../image/body_chair.svg);
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-footer + .content-footer{
+        margin-bottom: 5vw;
+    }
+
+}

@@ -210,9 +210,9 @@ body .index {
     position: relative;
     min-height: auto;
     width: 564px;
-    background-image: url(image/body_chair.svg), url(image/Ellipse1.svg),
-    url(image/Ellipse2.svg);
-    background-size: 450px auto, 330px, 420px;
+    background-image: url(../image/body_chair.svg), url(../image/Ellipse1.svg),
+    url(../image/Ellipse2.svg);
+    background-size: 28vw auto, 20vw, 25vw;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -337,6 +337,7 @@ footer {
 
 .footer{
     background-color: #1B3544;
+
     display: flex;
     justify-content: space-around;
 
@@ -367,8 +368,7 @@ footer {
     font-weight: 400;
     font-size: 32px;
     color: #FFFFFF;
-    
-    /* margin-top: 20px; */
+
     margin-bottom: 17px;
 }
 
